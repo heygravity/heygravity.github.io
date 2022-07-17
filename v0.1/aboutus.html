@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>About Us - Gravity™</title>
+    <style>
+      @media only screen and (min-width: 992px) {
+        .mobile-image {
+          display:none;
+        }
+        .desktop-image {
+          display:block;
+          width:100%;
+          height:100%;
+        }
+      }
+      @media only screen and (max-width: 991px) {
+        .mobile-image {
+          display:block;
+          width:100%;
+          height:100%;
+        }
+        .desktop-image {
+          display:none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src = "assest/desktop/AboutUs.png" class = "desktop-image" usemap = "#desktop_image">
+    <map name = "desktop_image">
+      <area shape = "rect" coords = "124,,262,704,100" alt = "rectangle" href = "index.html">
+    </map>
+  </body>
+</html>

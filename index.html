@@ -1,37 +1,89 @@
 <html>
   <head>
-    <title>Gravity™</title> 
+    <title>Gravity™</title>
+    <link rel="icon" type="image/x-icon" href="assest/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cutive+Mono&family=Major+Mono+Display&family=Nova+Mono&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <style>
-      @media only screen and (min-width: 992px) {
-        .mobile-image {
+      /*@media only screen and (min-width: 992px) {
+        .mobile {
           display:none;
         }
-        .desktop-image {
+        .desktop {
           display:block;
-          width:100%;
-          height:100%;
-        }
       }
       @media only screen and (max-width: 991px) {
-        .mobile-image {
+        .mobile {
           display:block;
-          width:100%;
-          height:100%;
         }
-        .desktop-image {
+        .desktop {
           display:none;
         }
+      } */
+        .Header_style{
+          font-family:"Major Mono Display",monospace;
+          font-size:100px;
+          text-align:center;
+          position:relative;
+          top:30%;
+          border-color:black;
+          border-radius:2px;
+          border-style:solid;
+          margin-left:10%;
+          margin-right:10%;
+        }
+      .NavBar{
+        position:relative;
+        top:30%;
+        display:flex;
+        justify-content:space-evenly;
+      }
+      button{
+        font-family:"Nova Mono", monospace;
+        font-size:25px;
+        background-color:transparent;
+        padding:1%;
+      }
+      button:hover{
+        background-color:black;
+        color:whitesmoke;
+      }
+      footer{
+        font-family: 'Cutive Mono', monospace;
+        position:relative;
+        top:48%;
+        display:flex;
+        justify-content:space-evenly;
       }
     </style>
   </head>
-  <body>
-    <img src = "assest/desktop/Main.png" class = "desktop-image" usemap = "#desktop_image">
-    <map name = "desktop_image">
-      <area shape = "circle" coords = "1310,,147,60" alt = "circle" href = "aboutus.html">
-      <area shape = "circle" coords = "1464,,141,60" alt = "circle" href = "mission.html">
-      <area shape = "circle" coords = "1607,,143,60" alt = "circle" href = "projects.html">
-      <area shape = "circle" coords = "1749,,143,60" alt = "circle" href = "contactus.html">
-    </map>
-    <!-- <img src = "assests/AboutUs.png" class = "mobile-image"> -->
+  <body align="center">
+    <h1 class = "Header_style">
+      Welcome<br>To<br>Gravity™
+    </h1>
+    <div class = "NavBar">
+      <button onclick = "window.location.href = 'aboutus.html';" >
+        About Us
+      </button>
+      <button onclick = "window.location.href = 'projects.html';">
+        Projects
+      </button>
+      <button onclick = "window.location.href = 'mission.html';">
+        Mission
+      </button>
+      <button onclick = "window.location.href = 'contactus.html';">
+        Contact Us
+      </button>
+    </div>
+    <footer>
+      <p>
+        ©All Rights Reserved
+      </p>
+      <p>
+        Gravity™ 2021-22
+      </p>
+      <p>
+        Pritish Rajpurohit
+      </p>
+    </footer>
   </body>
 </html>

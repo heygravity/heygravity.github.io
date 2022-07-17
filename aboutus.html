@@ -1,33 +1,79 @@
 <html>
   <head>
     <title>About Us - Gravity™</title>
+    <link rel="icon" type="image/x-icon" href="assest/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-      @media only screen and (min-width: 992px) {
-        .mobile-image {
-          display:none;
-        }
-        .desktop-image {
-          display:block;
-          width:100%;
-          height:100%;
-        }
+      h1{
+        font-family: 'Major Mono Display', monospace;
+        font-size:79px;
+        border-bottom-style:solid;
+        position:relative;
+        width:100%;
+        text-align:center;
       }
-      @media only screen and (max-width: 991px) {
-        .mobile-image {
-          display:block;
-          width:100%;
-          height:100%;
-        }
-        .desktop-image {
-          display:none;
-        }
+      .Div_Style{
+        position:relative;
+        columns:2;
+      }
+      p{
+        font-family: 'Nanum Gothic Coding', monospace;
+        text-align:center;
+        font-size:15px;
+      }
+      img{
+        position:relative;
+        width:100%;
+      }
+      footer{
+        font-family: 'Cutive Mono', monospace;
+        position:relative;
+        top:23%;
+        display:flex;
+        justify-content:space-evenly;
+      }
+      button{
+        float:left;
+        height:8%;
+        background-color:transparent;
+        border:none;
       }
     </style>
   </head>
   <body>
-    <img src = "assest/desktop/AboutUs.png" class = "desktop-image" usemap = "#desktop_image">
-    <map name = "desktop_image">
-      <area shape = "rect" coords = "124,,262,704,100" alt = "rectangle" href = "index.html">
-    </map>
+    <h1>
+      <a href = "index.html">
+        <button>
+          <i class="material-icons" style="font-size:60px;background-color:transparent">arrow_back_ios</i>
+        </button>
+      </a>
+      About Us
+    </h1><br>
+    <div class = "Div_Style">
+      <p>
+        Started in 2017<br>
+        |<br>|<br>|<br>|<br>v<br>
+        Founder Pritish Rajpurohit<br>
+        |<br>|<br>|<br>|<br>v<br>
+        Published First Application ('CISCE') in 2018<br>
+        |<br>|<br>|<br>|<br>v<br>
+        Got More Than 10k User's who download application in 2019<br>
+        |<br>|<br>|<br>|<br>v<br>
+        Gave a comeback in 2022
+      </p>
+      <img src = "assest/banner.png">
+    </div>
+    <footer>
+      <p>
+        ©All Rights Reserved
+      </p>
+      <p>
+        Gravity™ 2021-22
+      </p>
+      <p>
+        Pritish Rajpurohit
+      </p>
+    </footer>
   </body>
 </html>

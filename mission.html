@@ -1,33 +1,73 @@
 <html>
   <head>
     <title>Mission - Gravity™</title>
+    <link rel="icon" type="image/x-icon" href="assest/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Major+Mono+Display&family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
-      @media only screen and (min-width: 992px) {
-        .mobile-image {
-          display:none;
-        }
-        .desktop-image {
-          display:block;
-          width:100%;
-          height:100%;
-        }
+      h1{
+        font-family: 'Major Mono Display', monospace;
+        font-size:79px;
       }
-      @media only screen and (max-width: 991px) {
-        .mobile-image {
-          display:block;
-          width:100%;
-          height:100%;
-        }
-        .desktop-image {
-          display:none;
-        }
+      p{
+        font-family: 'Nanum Gothic Coding', monospace;
+        text-align:center;
+        font-size:15px;
+      }
+      .Div_Style{
+        border-style:solid;
+        position:relative;
+        top:19%;
+        padding-left:7%;
+        margin-left:10%;
+        margin-right:10%;
+      }
+      footer{
+        font-family: 'Cutive Mono', monospace;
+        position:relative;
+        top:43%;
+        display:flex;
+        justify-content:space-evenly;
+      }
+      li{
+        font-family: 'Nanum Gothic Coding', monospace;
+        padding:3%;
+        font-size:18px;
+      }
+      button{
+        float:left;
+        height:10%;
+        background-color:transparent;
+        border:none;
       }
     </style>
   </head>
   <body>
-    <img src = "assest/desktop/Mission.png" class = "desktop-image" usemap = "#desktop_image">
-    <map name = "desktop_image">
-      <area shape = "rect" coords = "118,218,702,48" alt = "rectangle" href = "index.html">
-    </map>
+    <div class = "Div_Style">
+      <h1>
+        <a href = "index.html">
+        <button>
+          <i class="material-icons" style="font-size:60px;background-color:transparent">arrow_back_ios</i>
+        </button>
+      </a>
+      Mission
+      </h1>
+      <ol type = "numeric">
+        <li>Provide the best service for our users who are using the application</li>
+        <li>Publish Application which should be used in daily life</li>
+        <li>Create the best products for our users.</li>
+      </ol>
+    </div>
+    <footer>
+      <p>
+        ©All Rights Reserved
+      </p>
+      <p>
+        Gravity™ 2021-22
+      </p>
+      <p>
+        Pritish Rajpurohit
+      </p>
+    </footer>
   </body>
 </html>
